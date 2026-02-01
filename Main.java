@@ -17,14 +17,14 @@ public class Main extends JFrame {
         setTitle("Form Data Karyawan");
         setSize(500, 650);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null); // Posisinya ada di tengah layar
+        setLocationRelativeTo(null); 
         setLayout(new BorderLayout());
 
         // Panel
         JPanel mainPanel = new JPanel(new GridBagLayout());
         mainPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
         GridBagConstraints gbc = new GridBagConstraints();
-        gbc.insets = new Insets(5, 5, 5, 5); // Jarak antar KOmponen
+        gbc.insets = new Insets(5, 5, 5, 5); 
         gbc.fill = GridBagConstraints.HORIZONTAL;
 
         // NIK
@@ -75,7 +75,7 @@ public class Main extends JFrame {
         JPanel genderPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 0, 0));
         rbLaki = new JRadioButton("Laki-laki");
         rbPerempuan = new JRadioButton("Perempuan");
-        ButtonGroup bgGender = new ButtonGroup(); // Agar hanya bisa pilih satu
+        ButtonGroup bgGender = new ButtonGroup(); 
         bgGender.add(rbLaki);
         bgGender.add(rbPerempuan);
         genderPanel.add(rbLaki);
@@ -125,31 +125,25 @@ public class Main extends JFrame {
             }
         });
 
-        // Menambahkan ScrollPane utama (jika layar kecil)
         add(new JScrollPane(mainPanel), BorderLayout.CENTER);
     }
 
-    // Helper method untuk nambah Label
     private void addLabel(JPanel panel, String text, int x, int y, GridBagConstraints gbc) {
         gbc.gridx = x;
         gbc.gridy = y;
         gbc.weightx = 0.3;
         panel.add(new JLabel(text), gbc);
     }
-
-    // Helper method untuk nambah Input Component
     private void addComponent(JPanel panel, Component comp, int x, int y, GridBagConstraints gbc) {
         gbc.gridx = x;
         gbc.gridy = y;
         gbc.weightx = 0.7;
         panel.add(comp, gbc);
     }
-
     public static void main(String[] args) {
-        // Menjalankan aplikasi
         SwingUtilities.invokeLater(() -> {
             try {
-                // OPSI 1 
+                // Option 1 
                 for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
                     if ("Nimbus".equals(info.getName())) {
                         UIManager.setLookAndFeel(info.getClassName());
@@ -157,7 +151,7 @@ public class Main extends JFrame {
                     }
                 }
                 
-                // OPSI 2
+                // Option 2
                 // UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
 
             } catch (Exception e) {
