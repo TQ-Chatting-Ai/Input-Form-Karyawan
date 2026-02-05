@@ -27,7 +27,7 @@ jar cfe TUGAS2_PBO_MSalmanRamadhanAlfadhlih_220401010280.jar Main *.class
 
 ### 3. Tes running aplikasi
 ```bash
-java -jar TUGAS2_PBO_NIM_NAMA.jar
+java -jar TUGAS2_PBO_MSalmanRamadhanAlfadhlih_220401010280.jar
 ```
 > GUI akan muncul sebagai aplikasi window
 
