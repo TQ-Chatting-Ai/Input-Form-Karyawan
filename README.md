@@ -1,3 +1,5 @@
+<samp>
+ 
 # Cara menjalankan
 
 ### 1. Cek paket JDK apakah sudah tersedia dalam sistem
@@ -32,3 +34,4 @@ java -jar TUGAS2_PBO_MSalmanRamadhanAlfadhlih_220401010280.jar
 > GUI akan muncul sebagai aplikasi window
 
 <img width="1287" height="726" alt="image" src="https://github.com/user-attachments/assets/861f0b8b-1266-4742-ab65-cbe64f32947d" />
+</samp>
